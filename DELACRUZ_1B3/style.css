@@ -1,0 +1,129 @@
+
+h1{
+    font-size: 50px;
+    font-family: verdana;
+    margin-top: 25px;
+    margin-left: 45px;
+    color: rgb(219, 195, 177);
+    text-align:center;
+    text-shadow: 5px 3px #695e56;
+}
+body {
+    background-image: url('imgg/rig.jpg'),url('imgg/lef.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    background-position: left,right;
+   background-size:contain;
+   background-color: rgb(150, 132, 108);
+
+  }
+  form {
+    margin:40px 0px; 
+    padding:0px;
+    text-align:center;
+    align :center;
+}
+
+  input[type="submit"]{
+    width: 15%;
+    background-color: #3d2c1d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: optima;
+    font-size: 15px;
+  }
+ input[type="reset"]{
+    width: 15%;
+    background-color: #3d2c1d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: optima;
+    font-size: 15px;
+ }
+ input[type="feedback"]{
+    width: 25%;
+    height: 25%;
+    background-color: #ceb7a3;
+    color: rgb(53, 47, 47);
+    padding: 14px 20px;
+   margin-top:auto ;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: optima;
+    font-size: 15px;
+    text-align: center;
+ }
+ input[type="text"]{
+    width: 20%;
+    background-color: #ceb7a3;
+    color: rgb(49, 44, 44);
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: optima;
+    font-size: 15px;
+    text-align: center;
+ }
+ .container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: verdana;
+    color: #3d2c1d;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(172, 132, 81);
+    border-radius: 45%;
+    margin-left: 40%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #423223;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: rgb(206, 177, 134);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgb(61, 44, 30);
+  }
+ 
